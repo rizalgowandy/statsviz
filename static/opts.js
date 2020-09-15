@@ -1,7 +1,5 @@
 // opts exports the plots options
 var opts = (function () {
-    const rightPanelWidth = 200; // unused at the moment
-
     function humanFileSize(bytes, si = false, dp = 1) {
         const thresh = si ? 1000 : 1024;
 
@@ -74,7 +72,7 @@ var opts = (function () {
 
     function getSize() {
         return {
-            width: 1000,
+            width: 950,
             height: 400,
         }
     }

@@ -1,20 +1,28 @@
 <!doctype html>
-<html>
+<html lang="en-US">
 
 <head>
     <meta charset="utf-8">
-    <title>Data Stream</title>
+    <title>Statsviz</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--DO NOT REMOVE: this comment gets replaced in development-->
     <link rel="stylesheet" href="./uPlot.min.css">
+    <link rel="stylesheet" href="./statsviz.css">
+    <!--DO NOT REMOVE: this comment gets replaced in development-->
 </head>
 
 <body>
-    <h2>Statsviz</h2>
-    <button type="button" id="pause-btn">Pause</button>
-    <div class="container">
-        <div class="statsviz" id="heap-plot"></div>
-        <div class="statsviz" id="bysizes-plot"></div>
+    <div id="all">
+        <div id="header">
+            <h1>Statsviz</h1>
+            <button type="button" id="pause-btn">Pause</button>
+        </div>
+        <div id="left">
+            <div class="statsviz" id="heap-plot"></div>
+            <div class="statsviz" id="bysizes-plot"></div>
+        </div>
+        <div id="right">
+            <h1>right column</h1>
+        </div>
     </div>
     <script src="./uPlot.iife.js"></script>
     <script src="./buffer.js"></script>
@@ -23,5 +31,3 @@
     <script src="./opts.js"></script>
     <script src="./app.js"></script>
 </body>
-
-</html>
